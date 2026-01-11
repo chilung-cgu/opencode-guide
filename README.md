@@ -3,10 +3,10 @@
 > **最全面的 OpenCode AI 編程助手中文使用指南**  
 > 從入門到精通，讓 AI 成為你開發路上的最佳夥伴
 
-[![GitHub stars](https://img.shields.io/github/stars/yourusername/opencode-guide.svg?style=social&label=Star)](https://github.com/yourusername/opencode-guide)
-[![GitHub forks](https://img.shields.io/github/forks/yourusername/opencode-guide.svg?style=social&label=Fork)](https://github.com/yourusername/opencode-guide)
-[![GitHub license](https://img.shields.io/github/license/yourusername/opencode-guide.svg)](https://github.com/yourusername/opencode-guide/blob/main/LICENSE)
-[![Build Status](https://github.com/yourusername/opencode-guide/workflows/Deploy%20MkDocs%20to%20GitHub%20Pages/badge.svg)](https://github.com/yourusername/opencode-guide/actions)
+[![GitHub stars](https://img.shields.io/github/stars/chilung-cgu/opencode-guide.svg?style=social&label=Star)](https://github.com/chilung-cgu/opencode-guide)
+[![GitHub forks](https://img.shields.io/github/forks/chilung-cgu/opencode-guide.svg?style=social&label=Fork)](https://github.com/chilung-cgu/opencode-guide)
+[![GitHub license](https://img.shields.io/github/license/chilung-cgu/opencode-guide.svg)](https://github.com/chilung-cgu/opencode-guide/blob/main/LICENSE)
+[![Build Status](https://github.com/chilung-cgu/opencode-guide/workflows/Deploy%20MkDocs%20to%20GitHub%20Pages/badge.svg)](https://github.com/chilung-cgu/opencode-guide/actions)
 
 ## 📖 關於本指南
 
@@ -161,14 +161,14 @@ opencode-guide/
 感謝以下貢獻者：
 
 - [OpenCode 開發團隊](https://github.com/anomalyco/opencode) - 創造這個優秀的開源專案
-- [所有貢獻者](https://github.com/yourusername/opencode-guide/graphs/contributors) - 讓這份指南更加完整
+- [所有貢獻者](https://github.com/chilung-cgu/opencode-guide/graphs/contributors) - 讓這份指南更加完整
 - [社群成員](https://opencode.ai/discord) - 提供寶貴的反饋和建議
 
 ---
 
 **🌟 如果這份指南對你有幫助，請給我們一個 Star！**
 
-**💡 有問題或建議？歡迎 [開啟 Issue](https://github.com/yourusername/opencode-guide/issues) 或加入討論！**
+**💡 有問題或建議？歡迎 [開啟 Issue](https://github.com/chilung-cgu/opencode-guide/issues) 或加入討論！**
 
 ---
 
