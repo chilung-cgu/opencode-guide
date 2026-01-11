@@ -48,6 +48,7 @@ theme:
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.top
+    - navigation.path
     - navigation.tracking
     - search.highlight
     - search.share
