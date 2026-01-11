@@ -162,7 +162,7 @@ markdown_extensions:
   - pymdownx.keys
   - pymdownx.magiclink:
       repo_url_shorthand: true
-      user: yourusername
+      user: chilung-cgu
       repo: opencode-guide
   - pymdownx.mark
   - pymdownx.smartsymbols

@@ -51,12 +51,12 @@ OpenCode Guide 是一個開源專案，我們熱烈歡迎所有形式的貢獻�
 ```bash
 # 在 GitHub 上點擊 Fork 按鈕
 # 或者使用 GitHub CLI
-gh repo fork yourusername/opencode-guide
+gh repo fork chilung-cgu/opencode-guide
 ```
 
 #### 2. 克隆你的 Fork
 ```bash
-git clone https://github.com/yourusername/opencode-guide.git
+git clone https://github.com/chilung-cgu/opencode-guide.git
 cd opencode-guide
 ```
 
@@ -467,20 +467,20 @@ style: 統一代碼塊格式
 - Discord #help 頻道
 
 #### **一般問題**
-- 專案郵箱：contact@opencode-guide.org
+- 專案郵箱：contact@opencode-guide.github.io
 - Discord #general 頻道
 - Reddit 私信
 
 #### **合作提案**
-- 專案維護者郵箱：maintainer@opencode-guide.org
+- 專案維護者郵箱：maintainer@opencode-guide.github.io
 - Discord #announcements 頻道
 - GitHub 私信
 
 ### 📚 **資源連結**
 
 #### **官方資源**
-- [專案首頁](https://yourusername.github.io/opencode-guide)
-- [GitHub 倉庫](https://github.com/yourusername/opencode-guide)
+- [專案首頁](https://chilung-cgu.github.io/opencode-guide)
+- [GitHub 倉庫](https://github.com/chilung-cgu/opencode-guide)
 - [OpenCode 官網](https://opencode.ai)
 - [OpenCode 文檔](https://opencode.ai/docs)
 

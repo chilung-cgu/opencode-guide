@@ -29,7 +29,7 @@
 #### **主要網站**
 - **[OpenCode 首頁](https://opencode.ai)** - 產品介紹和下載
 - **[官方文檔](https://opencode.ai/docs)** - 完整的使用文檔
-- **[GitHub 倉庫](https://github.com/anomalyco/opencode)** - 原始碼和問題回報
+- **[OpenCode 官方 GitHub](https://github.com/anomalyco/opencode)** - 原始碼和問題回報
 - **[OpenCode Zen](https://opencode.ai/zen)** - 經過驗證的模型推薦
 
 #### **功能特色**
