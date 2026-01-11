@@ -115,26 +115,25 @@ plugins:
         - custom-skip-class-name
       auto_caption: false
       caption_position: bottom
-  - social:
-      cards_layout_options:
-        font_family: "Noto Sans SC"
-      - icon: fontawesome/brands/github
-        link: https://github.com/chilung-cgu/opencode-guide
-      - icon: fontawesome/brands/discord
-        link: https://opencode.ai/discord
-      - icon: fontawesome/solid/paper-plane
-        link: https://github.com/chilung-cgu/opencode-guide/issues
-  
+
+# Extra settings
+extra:
   version:
     provider: mike
     default: stable
-  
   consent:
     title: Cookie 同意
-    description: >- 
+    description: >-
       我們使用 Cookie 來辨識您的重複訪問和偏好設定，
       來衡量我們文檔的有效性以及使用者是否找到他們在搜尋的內容。
       在您的同意下，這將幫助我們改進我們的文檔。
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/chilung-cgu/opencode-guide
+    - icon: fontawesome/brands/discord
+      link: https://opencode.ai/discord
+    - icon: fontawesome/solid/paper-plane
+      link: https://github.com/chilung-cgu/opencode-guide/issues
 
 # Extensions
 markdown_extensions:
@@ -220,11 +219,3 @@ nav:
     - 社群連結: resources/community.md
     - 更新日誌: resources/changelog.md
   - 貢獻指南: contributing.md
-
-# Page tree
-pages:
-  - Getting Started:
-    - getting-started/index.md
-    - Installation: getting-started/installation.md
-    - First Time: getting-started/first-time.md
-    - Basic Commands: getting-started/basic-commands.md

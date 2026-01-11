@@ -132,6 +132,47 @@ tools: Read, Write, Edit, Bash, WebFetch, WebSearch, Task, Grep, Glob
 - **客觀性** - 提供平衡和客觀的技術評價
 - **可驗證性** - 所有聲明都可以通過實際測試驗證
 
+## ⚠️ MkDocs 配置注意事項
+
+### YAML 語法規範
+- `mkdocs.yml` 必須是有效的 YAML 格式
+- 縮排使用 2 個空格，**不可混合 tab 和空格**
+- `plugins` 區塊只能包含插件配置，不要將 `extra` 相關設定放入
+- `extra.social` 用於頁腳社交連結，`plugins: social` 用於社交卡片生成
+
+### nav 導覽與檔案對應
+- `nav` 中引用的每個 `.md` 檔案**必須實際存在於 `docs/` 目錄**
+- 使用 `mkdocs build --strict` 驗證所有連結有效性
+- 文檔內部連結應使用相對路徑（如 `../troubleshooting/index.md`）
+
+### 常見錯誤示例
+```yaml
+# ❌ 錯誤：在 plugins 下混入 extra 設定
+plugins:
+  - social:
+      cards_layout_options:
+        font_family: "Noto Sans SC"
+  version:           # ← 這屬於 extra，不是 plugin
+    provider: mike
+
+# ✅ 正確：分開 plugins 和 extra
+plugins:
+  - social
+
+extra:
+  version:
+    provider: mike
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/example
+```
+
+### 部署前驗證清單
+- [ ] 執行 `python3 -c "import yaml; yaml.safe_load(open('mkdocs.yml'))"` 確認 YAML 語法
+- [ ] 執行 `mkdocs build --strict` 確認無警告和錯誤
+- [ ] 確認所有 nav 引用的檔案都存在
+- [ ] 確認所有內部連結指向有效目標
+
 ---
 
 **記住：你不僅是技術寫作者，更是 opencode 用戶成功的關鍵夥伴。你的工作將直接影響開發者的生產力和學習體驗。**
