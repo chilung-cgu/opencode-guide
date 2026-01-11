@@ -1,0 +1,242 @@
+site_name: OpenCode 完整使用指南
+site_description: 最全面的 OpenCode AI 編程助手中文使用指南
+site_author: OpenCode Guide Community
+site_url: https://yourusername.github.io/opencode-guide
+
+# Repository
+repo_name: yourusername/opencode-guide
+repo_url: https://github.com/yourusername/opencode-guide
+edit_uri: edit/main/docs/
+
+# Copyright
+copyright: |
+  &copy; 2025 OpenCode Guide 社群 - 
+  <a href="#__consent">更改 Cookie 設定</a>
+
+# Configuration
+theme:
+  name: material
+  language: zh
+  
+  # Static files
+  static_templates:
+    - 404.html
+  
+  # Don't include MkDocs' JavaScript
+  include_search_page: false
+  search_index_only: true
+  
+  # Theme features
+  features:
+    - announce.dismiss
+    - content.action.edit
+    - content.action.view
+    - content.code.annotate
+    - content.code.copy
+    - content.code.select
+    - content.tabs.link
+    - content.tooltips
+    - header.autohide
+    - navigation.expand
+    - navigation.footer
+    - navigation.indexes
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.progress
+    - navigation.prune
+    - navigation.sections
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+    - toc.integrate
+    - header.autohide
+  
+  # Theme palette
+  palette:
+    # Palette toggle for light mode
+    - scheme: default
+      primary: blue grey
+      accent: deep orange
+      toggle:
+        icon: material/brightness-7
+        name: 切換至深色模式
+    
+    # Palette toggle for dark mode
+    - scheme: slate
+      primary: blue grey
+      accent: deep orange
+      toggle:
+        icon: material/brightness-4
+        name: 切換至淺色模式
+  
+  # Font
+  font:
+    text: Roboto
+    code: Roboto Mono
+  
+  # Logo
+  logo: assets/logo.png
+  
+  # Favicon
+  favicon: assets/favicon.png
+  
+  # Icon
+  icon:
+    logo: material/code-tags
+    repo: fontawesome/brands/github
+
+# Plugins
+plugins:
+  - search:
+      separator: '[\s\-.,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\?(?!\d)|&(?!\d)'
+      lang: zh
+  - minify:
+      minify_html: true
+  - git-revision-date-localized:
+      type: datetime
+      timezone: Asia/Taipei
+      enable_creation_date: true
+  - awesome-pages
+  - glightbox:
+      touchNavigation: true
+      loop: false
+      effect: zoom
+      slide_effect: slide
+      width: 100%
+      height: auto
+      zoomable: true
+      draggable: true
+      skip_classes:
+        - custom-skip-class-name
+      auto_caption: false
+      caption_position: bottom
+  - social:
+      cards_layout_options:
+        font_family: "Noto Sans SC"
+        font_color: black
+        background_color: white
+        header_font_family: "Noto Sans SC"
+  - macros
+
+# Customization
+extra:
+  analytics:
+    provider: google
+    property: G-XXXXXXXXXX
+  
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/yourusername/opencode-guide
+    - icon: fontawesome/brands/discord
+      link: https://opencode.ai/discord
+    - icon: fontawesome/solid/paper-plane
+      link: mailto:contact@example.com
+  
+  version:
+    provider: mike
+    default: stable
+  
+  consent:
+    title: Cookie 同意
+    description: >- 
+      我們使用 Cookie 來辨識您的重複訪問和偏好設定，
+      來衡量我們文檔的有效性以及使用者是否找到他們在搜尋的內容。
+      在您的同意下，這將幫助我們改進我們的文檔。
+
+# Extensions
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+      title: 目錄
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: yourusername
+      repo: opencode-guide
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+  - pymdownx.tabbed:
+      alternate_style: true
+      combine_header_slug: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+# Navigation
+nav:
+  - 首頁: index.md
+  - 🚀 快速開始:
+    - getting-started/index.md
+    - 安裝配置: getting-started/installation.md
+    - 第一次使用: getting-started/first-time.md
+    - 基本命令: getting-started/basic-commands.md
+  - 🔧 使用指南:
+    - usage/index.md
+    - TUI 界面: usage/tui-interface.md
+    - 代理系統: usage/agents.md
+    - 命令詳解: usage/commands.md
+    - 最佳實踐: usage/best-practices.md
+  - ⚙️ 配置詳解:
+    - configuration/index.md
+    - 主題設定: configuration/themes.md
+    - 快捷鍵: configuration/keybinds.md
+    - 模型配置: configuration/models.md
+    - 自定義工具: configuration/custom-tools.md
+  - 🚀 進階功能:
+    - advanced/index.md
+    - 技能系統: advanced/skills-system.md
+    - MCP 服務器: advanced/mcp-servers.md
+    - 插件開發: advanced/plugins.md
+    - 企業部署: advanced/enterprise.md
+  - 💡 實戰案例:
+    - examples/index.md
+    - Web 開發: examples/web-development.md
+    - API 開發: examples/api-development.md
+    - 機器學習: examples/machine-learning.md
+    - 團隊協作: examples/team-collaboration.md
+  - 🔧 故障排除:
+    - troubleshooting/index.md
+    - 常見問題: troubleshooting/common-issues.md
+    - 調試技巧: troubleshooting/debugging.md
+    - 效能優化: troubleshooting/performance.md
+  - 📚 資源中心:
+    - resources/index.md
+    - 下載資源: resources/downloads.md
+    - 社群連結: resources/community.md
+    - 更新日誌: resources/changelog.md
+  - 貢獻指南: contributing.md
+
+# Page tree
+pages:
+  - Getting Started:
+    - getting-started/index.md
+    - Installation: getting-started/installation.md
+    - First Time: getting-started/first-time.md
+    - Basic Commands: getting-started/basic-commands.md
